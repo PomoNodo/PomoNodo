@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>pomodo</title>
     <link href="PomodoApp.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="lib/jquery-1.11.3.min.js"></script>
     <!--<script async src="lib/bootstrap.min.js"></script>-->
     <script src="PomodoApp.js"></script>
@@ -28,10 +29,58 @@
 
     <button type="button" class="btn btn-default material_btn material_btn_primary">Button</button>
 
-<!--   ccg chkbox   -->
+<!--   timer   -->
+
+
+
+    <div class="session">
+        <div class="row">
+            <h4 class="sm-btn-headers"> Break Length <span class="head-margin"></span>
+                Session Length </h4>
+        </div>
+        <div class="row">
+            <form name="input">
+                <button type="button" class="btn" id="brk-minus">-</button>
+                <button id="brk" class="time">5</button>
+                <button type="button" class="btn" id="brk-plus">+</button>
+                <span class="btn-margin"></span>
+                <button type="button" class="btn" id="sesh-minus">-</button>
+                <button class="time" id="sesh">25</button>
+                <button type="button" class="btn" id="sesh-plus">+</button>
+            </form>
+        </div>
+    </div>
+    <div id="timer">
+    </div>
+    <div id="timer-button">
+        <br>
+        <button type="button" id="start" class="btn-main">Start</button>
+        <button type="button" id="stop" class="btn-main">Stop</button>
+        <button type="button" id="reset" class="btn-main">Reset</button>
+    </div>
+
+
+
+
+    <!--   timer   -->
+
 
     <footer>
     </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -47,9 +96,9 @@
     <ul id="task-template">
         <li class="task">
             <div class="tools">
-                <button class="delete" title="Delete">X</button>
-                <button class="move-up" title="Up">^</button>
-                <button class="move-down" title="Down">v</button>
+                <button class="delete" title="Delete"><i class="material-icons">delete</i></button>
+                <button class="move-up" title="Up"><i class="material-icons">swap_vert</i></button>
+                <button class="move-down" title="Down"><i class="material-icons">swap_vert</i></button>
             </div>
             <span class="task-name"></span>
         </li>
