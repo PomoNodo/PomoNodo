@@ -1,16 +1,15 @@
-body
+﻿﻿body
 {
-    font: 1em Verdana,Geneva, sans-serif;
+    font: 1em Verdana, Geneva, sans-serif;
     padding: 0;
     margin: 5px;
-    color: black;
+    color: Black;
     background-color: WhiteSmoke;
 }
-
-div {
+div
+{
     padding: 0;
     margin: 0;
-
 }
 button
 {
@@ -21,11 +20,15 @@ button
     display: none;
 }
 
+/****************************************************************************/
+/* App */
+/****************************************************************************/
 #app
 {
     margin: 4px;
-    background-color: #bbc;
+    background-color: rgba(244, 244, 245, 0.4);
 }
+
 #app>header
 {
     padding: 0 0.5em;
@@ -39,7 +42,283 @@ button
     color: WhiteSmoke;
     background-color: #006;
 }
+
 #main
 {
     margin: 1em;
+}
+
+#add-task label
+{
+    display: block;
+    font-weight: bold;
+}
+#new-task-name
+{
+    font-size: 1em;
+    display: block;
+    width: 15em;
+}
+
+#task-list
+{
+    padding: 0;
+}
+
+#task-list li
+{
+    list-style: none;
+    padding: 0.25em;
+    margin: 0.25em;
+}
+
+#task-list .task .tools
+{
+    display: inline-block;
+}
+#task-list .task .tools button
+{
+    margin: 0;
+    padding: 0;
+    width: 1.25em;
+    height: 1.25em;
+    border: none;
+}
+
+
+
+
+/**************************Buttons*************************/
+.material_btn {
+    position: relative;
+    font-weight: 300;
+    color: #222;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 0;
+    border: 1px solid #eeeeee;
+    -webkit-transition-property: box-shadow, background-color;
+    transition-property: box-shadow, background-color;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+.material_btn:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.42);
+    background: #eee;
+}
+.material_btn:active {
+    box-shadow: none;
+}
+.material_btn:focus {
+    background: #c9c9c9;
+    outline: 0 !important;
+}
+.material_btn_lg,
+.material_btn_group_lg .material_btn {
+    padding: 12px 25px;
+}
+.material_btn_sm,
+.material_btn_group_sm .material_btn {
+    padding: 8px 15px;
+}
+.material_btn_xs,
+.material_btn_group_xs .material_btn {
+    padding: 5px 10px;
+}
+.material_btn_primary {
+    background-color: #4092d9;
+    border: 1px solid #4092d9;
+    color: #fff;
+}
+.material_btn_primary:hover {
+    color: #fff;
+    box-shadow: 0 5px 7px #66626b;
+    background-color: #64b2f5;
+}
+.material_btn_primary:active {
+    background-color: #3488d1;
+    box-shadow: none;
+}
+.material_btn_primary:focus {
+    background-color: #3488d1;
+    color: #fff;
+}
+.material_btn_success {
+    background-color: #68c368;
+    border: 1px solid #68c368;
+    color: #fff;
+}
+.material_btn_success:hover {
+    color: #fff;
+    box-shadow: 0 5px 7px #66626b;
+    background-color: #66d566;
+}
+.material_btn_success:active {
+    background-color: #22ac22;
+    box-shadow: none;
+}
+.material_btn_success:focus {
+    background-color: #22ac22;
+    color: #fff;
+}
+.material_btn_info {
+    background-color: #6acce9;
+    border: 1px solid #6acce9;
+    color: #fff;
+}
+.material_btn_info:hover {
+    color: #fff;
+    box-shadow: 0 5px 7px #66626b;
+    background-color: #8bdaf2;
+}
+.material_btn_info:active {
+    background-color: #3ab4d8;
+    box-shadow: none;
+}
+.material_btn_info:focus {
+    background-color: #3ab4d8;
+    color: #fff;
+}
+.material_btn_warning {
+    background-color: #f2a12e;
+    border: 1px solid #f2a12e;
+    color: #fff;
+}
+.material_btn_warning:hover {
+    color: #fff;
+    box-shadow: 0 5px 7px #66626b;
+    background-color: #fab655;
+}
+.material_btn_warning:active {
+    background-color: #d3953c;
+    box-shadow: none;
+}
+.material_btn_warning:focus {
+    background-color: #d3953c;
+    color: #fff;
+}
+.material_btn_danger {
+    background-color: #f3413c;
+    border: 1px solid #f3413c;
+    color: #fff;
+}
+.material_btn_danger:hover {
+    color: #fff;
+    box-shadow: 0 5px 7px #66626b;
+    background-color: #f36c68;
+}
+.material_btn_danger:active {
+    background-color: #c72a25;
+    box-shadow: none;
+}
+.material_btn_danger:focus {
+    background-color: #c72a25;
+    color: #fff;
+}
+.material_btn_group .material_btn {
+    border-radius: 0;
+}
+.material_btn_group .material_dropdown_btn {
+    padding: 10px 30px 10px 20px;
+}
+.material_btn_group .caret {
+    right: 10px;
+}
+.material_btn_toggle {
+    height: 100%;
+}
+/*********************************************************/
+
+
+
+
+/*****************Checkbox********************/
+.material_label_checkbox {
+    position: relative;
+    display: block;
+    padding-left: 40px;
+    cursor: pointer;
+    height: 25px;
+}
+.material_label_checkbox:after {
+    content: '';
+    display: block;
+    -ms-transform: scaleX(-1) rotate(135deg);
+    -webkit-transform: scaleX(-1) rotate(135deg);
+    transform: scaleX(-1) rotate(135deg);
+    -ms-transform-origin: left top;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    border-right: 2px solid #cee;
+    border-top: 2px solid #cee;
+    position: absolute;
+    left: 5px;
+    top: 15px;
+    width: 5px;
+    height: 15px;
+}
+.material_label_checkbox:hover:after {
+    border-color: #bdd;
+}
+.material_label_checkbox:before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+    position: absolute;
+    left: 0;
+}
+.material_checkbox {
+    display: none;
+}
+.material_checkbox:checked + label:after {
+    -webkit-animation: check 0.8s;
+    animation: check 0.8s;
+    border-color: #4092d9;
+}
+.material_checkbox_success:checked + label:after {
+    border-color: #68c368;
+}
+.material_checkbox_info:checked + label:after {
+    border-color: #6acce9;
+}
+.material_checkbox_warning:checked + label:after {
+    border-color: #f2a12e;
+}
+.material_checkbox_error:checked + label:after {
+    border-color: #c14f4c;
+}
+@-webkit-keyframes check {
+    0% {
+        height: 0;
+        width: 0;
+    }
+    25% {
+        height: 0;
+        width: 5px;
+    }
+    50% {
+        height: 15px;
+        width: 5px;
+    }
+}
+@keyframes check {
+    0% {
+        height: 0;
+        width: 0;
+    }
+    25% {
+        height: 0;
+        width: 5px;
+    }
+    50% {
+        height: 15px;
+        width: 5рx;
+    }
 }

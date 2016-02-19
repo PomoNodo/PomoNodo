@@ -5,6 +5,7 @@
     <title>pomodo</title>
     <link href="PomodoApp.css" rel="stylesheet"/>
     <script src="lib/jquery-1.11.3.min.js"></script>
+    <!--<script async src="lib/bootstrap.min.js"></script>-->
     <script src="PomodoApp.js"></script>
 </head>
 <body>
@@ -25,11 +26,34 @@
 
     </div>
 
+    <button type="button" class="btn btn-default material_btn material_btn_primary">Button</button>
 
-    <footer>alex 2016
+<!--   ccg chkbox   -->
+
+    <footer>
     </footer>
 
 
+
+    <div class="material_checkbox_group">
+        <input type="checkbox" id="checkbox" name="checkbox" class="material_checkbox" />
+        <label class="material_label_checkbox" for="checkbox">Do you like it?</label>
+    </div>
+
+
+</div>
+
+<div id="templates" class="hidden">
+    <ul id="task-template">
+        <li class="task">
+            <div class="tools">
+                <button class="delete" title="Delete">X</button>
+                <button class="move-up" title="Up">^</button>
+                <button class="move-down" title="Down">v</button>
+            </div>
+            <span class="task-name"></span>
+        </li>
+    </ul>
 </div>
 
 </body>
