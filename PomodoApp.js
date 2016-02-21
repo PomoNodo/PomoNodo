@@ -4,6 +4,8 @@
 
 "use strict";
 
+
+
 function PomodoApp()
 {
     var version = "v1.2";

@@ -122,6 +122,18 @@ td {
     z-index: 20;
 }
 
+.btn-main
+{
+    color: #fff !important;
+    border: 0 ;
+    background: #333;
+    outline: none !important;
+}
+
+/**************************Timer*************************/
+
+
+
 
 
 

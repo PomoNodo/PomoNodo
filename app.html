@@ -6,8 +6,9 @@
     <link href="PomodoApp.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="lib/jquery-1.11.3.min.js"></script>
-    <!--<script async src="lib/bootstrap.min.js"></script>-->
+    <script async src="lib/bootstrap.min.js"></script>
     <script src="PomodoApp.js"></script>
+    <script src="lib/timer.js"></script>
 </head>
 <body>
 
@@ -29,34 +30,71 @@
 
     <button type="button" class="btn btn-default material_btn material_btn_primary">Button</button>
 
-<!--   timer   -->
 
 
 
-    <div class="session">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--   timer
+
+
+
+    <div class="container">
+
         <div class="row">
-            <h4 class="sm-btn-headers"> Break Length <span class="head-margin"></span>
-                Session Length </h4>
+            <table class="table borderless">
+                <tbody>
+                <tr>
+                    <td>BREAK LENGTH</td>
+                    <td>SESSION LENGTH</td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul class="list-inline">
+                            <li><button class="emptybtn btn" id="breakbtnminus"><i class="glyphicon glyphicon-minus"></i></button></li>
+                            <li><p id="breaktime">5</p></li>
+                            <li><button class="btn emptybtn" id="breakbtnplus"><i class="glyphicon glyphicon-plus"></i></button></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul class="list-inline">
+                            <li><button class="btn emptybtn" id="sessionbtnminus"><i class="glyphicon glyphicon-minus"></i></button></li>
+                            <li><p id="sessiontime">25</p></li>
+                            <li><button class="btn emptybtn" id="sessionbtnplus"><i class="glyphicon glyphicon-plus"></i></button></li>
+                        </ul>
+                    </td>
+
+                </tr>
+                </tbody>
+            </table>
         </div>
+
         <div class="row">
-            <form name="input">
-                <button type="button" class="btn" id="brk-minus">-</button>
-                <button id="brk" class="time">5</button>
-                <button type="button" class="btn" id="brk-plus">+</button>
-                <span class="btn-margin"></span>
-                <button type="button" class="btn" id="sesh-minus">-</button>
-                <button class="time" id="sesh">25</button>
-                <button type="button" class="btn" id="sesh-plus">+</button>
-            </form>
+            <button class="btn time-btn" id="timerbtn">
+                <p id="type">Session</p>
+                <p id="timer">25 : 00</p>
+            </button>
         </div>
-    </div>
-    <div id="timer">
-    </div>
-    <div id="timer-button">
-        <br>
-        <button type="button" id="start" class="btn-main">Start</button>
-        <button type="button" id="stop" class="btn-main">Stop</button>
-        <button type="button" id="reset" class="btn-main">Reset</button>
     </div>
 
 
