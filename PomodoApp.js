@@ -10,6 +10,9 @@ function PomodoApp()
 {
     var version = "v1.2";
 
+    var appStorage;
+    appStorage = new AppStorage("pomodoApp");
+
     function setStatus(message)
     {
         $("#app>footer").text(message);
