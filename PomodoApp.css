@@ -1,4 +1,4 @@
-﻿﻿body
+﻿﻿.body
 {
     font: 1em Verdana, Geneva, sans-serif;
     padding: 0;
@@ -34,13 +34,13 @@ button
     padding: 0 0.5em;
     font-size: 1.5em;
     color: WhiteSmoke;
-    background-color: #006;
+    background-color: #36c5df;
 }
 #app>footer
 {
     padding: 0.25em;
     color: WhiteSmoke;
-    background-color: #006;
+    background-color: #36c5df;
 }
 
 #main
@@ -111,7 +111,7 @@ td {
 .time-btn {
     color: #fff !important;
     background: #333;
-    border:2px solid #99CC00;
+    border:2px solid #94c931;
     outline: none !important;
     border-radius: 50%;
     width:300px;
