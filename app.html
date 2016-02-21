@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="lib/jquery-1.11.3.min.js"></script>
     <script async src="lib/bootstrap.min.js"></script>
+    <script src="appStorage.js"></script>
     <script src="PomodoApp.js"></script>
     <script src="lib/timer.js"></script>
 </head>
@@ -22,11 +23,13 @@
 
         </div>
         <ul id="task-list">
-
         </ul>
 
 
     </div>
+
+
+
 
     <button type="button" class="btn btn-default material_btn material_btn_primary">Button</button>
 
@@ -139,9 +142,9 @@
                 <button class="move-down" title="Down"><i class="material-icons">swap_vert</i></button>
             </div>
             <span class="task-name"></span>
+            <input type="text" class="task-name hidden"/>
         </li>
     </ul>
 </div>
-
 </body>
 </html>

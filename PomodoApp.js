@@ -14,6 +14,14 @@ function PomodoApp()
     {
         $("#app>footer").text(message);
     }
+    function saveTaskList()
+    {
+        var tasks = [];
+        $("#task-list .task span.task-name").each(function() {
+            tasks.push($(this).text())
+        });
+        appStorage.setValue("taskList", tasks);
+    }
 
     function addTask()
     {
@@ -23,6 +31,7 @@ function PomodoApp()
             addTaskElement(taskName);
             // Reset the field
             $("#new-task-name").val("").focus();
+            saveTaskList();
         }
     }
 
@@ -34,14 +43,33 @@ function PomodoApp()
         $("#task-list").append($task);
 
         // Button events
-        $("button.delete", $task).click(function() { $task.remove(); });
-        $("button.move-up", $task).click(function() { $task.insertBefore($task.prev()); });
-        $("button.move-down", $task).click(function() { $task.insertAfter($task.next()); });
+        $("button.delete", $task).click(function() { removeTask($task); });
+        $("button.move-up", $task).click(function() { moveTask($task, true); });
+        $("button.move-down", $task).click(function() { moveTask($task, false); });
 
         // Task name events
         $("span.task-name", $task).click(function() { onEditTaskName($(this)); });
         $("input.task-name", $task).change(function() { onChangeTaskName($(this)); })
             .blur(function() { $(this).hide().siblings("span.task-name").show(); });
+    }
+
+    function removeTask($task)
+    {
+        $task.remove();
+        saveTaskList();
+    }
+
+    function moveTask($task, moveUp)
+    {
+        if (moveUp)
+        {
+            $task.insertBefore($task.prev());
+        }
+        else
+        {
+            $task.insertAfter($task.next());
+        }
+        saveTaskList();
     }
 
     function onEditTaskName($span)
@@ -57,8 +85,21 @@ function PomodoApp()
         if ($input.val())
         {
             $span.text($input.val());
+            saveTaskList();
         }
         $span.show();
+    }
+
+    function loadTaskList()
+    {
+        var tasks = appStorage.getValue("taskList");
+        if (tasks)
+        {
+            for (var i in tasks)
+            {
+                addTaskElement(tasks[i]);
+            }
+        }
     }
 
     this.start = function()
@@ -74,6 +115,8 @@ function PomodoApp()
             .focus();
 
         $("#app>header").append(version);
+
+        loadTaskList();
         setStatus("ready");
     };
 }
