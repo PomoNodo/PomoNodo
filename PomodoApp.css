@@ -25,8 +25,19 @@ button
 /****************************************************************************/
 #app
 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+
     margin: 4px;
-    background-color: WhiteSmoke;
+    background-color: #bbc;
+    background: -webkit-linear-gradient(top, #bbc, #558);
+    background: -moz-linear-gradient(top, #bbc, #558);
+    background: -ms-linear-gradient(top, #bbc, #558);
+    background: linear-gradient(top, #bbc, #558);
 }
 
 #app>header
@@ -34,18 +45,32 @@ button
     padding: 0 0.5em;
     font-size: 1.5em;
     color: WhiteSmoke;
-    background-color: #36c5df;
+    background-color: #006;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.6);
 }
 #app>footer
 {
+    position: absolute;
+    bottom: 0;
+    font-size: 0.75em;
     padding: 0.25em;
     color: WhiteSmoke;
-    background-color: #36c5df;
+    background-color: #006;
+}
+
+#toolbar
+{
+    padding: 0.25em;
+    font-size: 0.8em;
+    color: WhiteSmoke;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 #main
 {
-    margin: 1em;
+    min-width: 9em;
+    max-width: 25em;
+    margin: 1em auto;
 }
 
 #add-task label
@@ -57,7 +82,7 @@ button
 {
     font-size: 1em;
     display: block;
-    width: 15em;
+    width: 98%;
 }
 
 #task-list
@@ -65,24 +90,77 @@ button
     padding: 0;
 }
 
-#task-list li
+#task-list .task
 {
+    position: relative;
     list-style: none;
-    padding: 0.25em;
+    padding: 0.5em;
     margin: 0.25em;
+    background-color: beige;
+    border-radius: 4px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+#task-list .task:hover
+{
+    background-color: white;
+}
+#task-list .task.selected
+{
+    padding: 0.6em 0.5em;
+    border: 2px solid orange;
+    border-radius: 6px;
+    background-color: white;
+}
+#task-list .task input.task-name
+{
+    margin: 0;
+    font-size: 1em;
 }
 
 #task-list .task .tools
 {
-    display: inline-block;
+    position: absolute;
+    top: 0.25em;
+    right: 0.25em;
+    border: 1px solid black;
+    border-radius: 2px;
+    opacity: 0;
+    padding: 1px;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+#task-list .task:hover .tools,
+#task-list .task.selected .tools
+{
+    opacity: 1;
 }
 #task-list .task .tools button
 {
     margin: 0;
     padding: 0;
-    width: 1.25em;
-    height: 1.25em;
+    width: 16px;
+    height: 16px;
+    background: -webkit-gradient();
     border: none;
+    color: transparent;
+}
+#task-list .task .tools button.delete
+{
+    background-position: 0 0;
+}
+#task-list .task .tools button.move-up
+{
+    background-position: -16px 0;
+}
+#task-list .task .tools button.move-down
+{
+    background-position: -32px 0;
 }
 
 
