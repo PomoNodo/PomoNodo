@@ -145,11 +145,13 @@ button
     margin: 0;
     padding: 0;
     width: 16px;
-    height: 16px;
-    background: -webkit-gradient();
+    /* height: 16px;*/
+
     border: none;
     color: transparent;
 }
+/*
+
 #task-list .task .tools button.delete
 {
     background-position: 0 0;
@@ -162,6 +164,7 @@ button
 {
     background-position: -32px 0;
 }
+*/
 
 
 
