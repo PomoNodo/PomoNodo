@@ -7,9 +7,15 @@ and adds to your next TODO pomodoro task
 
 Clone this repo
 `npm install`
+Github token data configures using JWT. so to create environment variables
+you'll need to create a config.env file with:
+  - GITHUB_CLIENT_ID
+  - GITHUB_CLIENT_SECRET
+  - BASE_URL
 Add the config.env variables
 `nodemon src/start.js`
-
+And run
+`npm start`
 
 ## Functionality
 - [x] Login via Github oAuth
