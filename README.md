@@ -1,19 +1,22 @@
 # Brief description
 
-A pomodoro app that blocks distractions while you work. App integrates with your Github profile, pull-up issues You working
+A pomodoro app that blocks distractions while you working. App integrates with your Github profile, pull-up issues You working
 and adds to your next TODO pomodoro task
 
 ## Instructions
 
 Clone this repo
 `npm install`
-Github token data configures using JWT. so to create environment variables
+
+Github token data configures using JWT, so to create environment variables
 you'll need to create a config.env file with:
   - GITHUB_CLIENT_ID
   - GITHUB_CLIENT_SECRET
   - BASE_URL
+
 Add the config.env variables
 `nodemon src/start.js`
+
 And run
 `npm start`
 
