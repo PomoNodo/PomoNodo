@@ -1,0 +1,32 @@
+{
+  "name": "PomoNodo",
+  "version": "1.0.0",
+  "description": "🍅 A pomodoro app that blocks distractions while you work and integrates with your Github profile",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/start.js",
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexwander/NodoPomodo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexwander/NodoPomodo"
+  },
+  "homepage": "https://github.com/alexwander/NodoPomodo#readme",
+  "devDependencies": {
+    "tape": "^4.6.3",
+    "tap-spec": "^4.1.1"
+  },
+  "dependencies": {
+    "env2": "^2.1.1",
+    "handlebars": "^4.0.6",
+    "inert": "^4.0.3",
+    "marked": "^0.3.6",
+    "request": "^2.79.0",
+    "vision": "^4.1.1"
+  }
+}

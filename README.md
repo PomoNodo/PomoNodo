@@ -3,6 +3,12 @@
 A pomodoro app that blocks distractions while you working. App integrates with your Github profile, pull-up issues You working
 and adds to your next TODO pomodoro task
 
+## Created using:
+    - NodeJS
+    - MongoDB
+    - ExpressJS
+    - AngularJS
+
 ## Instructions
 
 Clone this repo
