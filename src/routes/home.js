@@ -5,13 +5,13 @@ module.exports = {
   method: 'GET',
   config: {
     auth: {
-      mode: 'try', // try to go to page even if the strategy is not loaded
+      mode: 'try',
       strategy: 'session'
     }
   },
   handler: (req, rep) => {
     const homeObj = {
-      title: 'PomoNodo - welcome!',
+      title: 'PomoNodo',
       loggedIn: req.auth.isAuthenticated
     };
 
