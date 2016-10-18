@@ -26,6 +26,22 @@ module.exports = {
       const userToken = {
         access_token: parsed.access_token
       };
-      
+      Request.get({
+        headers: {
+          'User-Agent': 'GitPom',
+          // as recommended by the API documentation
+          Accept: `application/json`,
+          Authorization: `token ${userToken.access_token}`
+        },
+        url: `https://api.github.com/user`
+      }, (err, res, body) => {
+        if (err) throw err;
+        parsed = JSON.parse(body);
+        const userDetails = {
+          userName: parsed.login,
+          avatarUrl: parsed.avatar_url
+        };
+        // set the cookie containing the token, the username and the avatar url
+       
   }
 };
