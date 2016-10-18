@@ -42,6 +42,14 @@ module.exports = {
           avatarUrl: parsed.avatar_url
         };
         // set the cookie containing the token, the username and the avatar url
-       
+        req.cookieAuth.set(Object.assign(userToken, userDetails));
+        rep(`<a id="continue" href="/"></a>
+          <script>
+            window.addEventListener('load', function(){
+              document.getElementById("continue").click();
+            })
+          </script>`);
+      });
+    });
   }
 };
