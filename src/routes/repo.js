@@ -1,4 +1,5 @@
 const getIssues = require('../lib/getIssues');
+const marked = require('marked');
 
 module.exports = {
   method: 'GET',
@@ -29,3 +30,7 @@ module.exports = {
     }
   }
 };
+
+
+
+
