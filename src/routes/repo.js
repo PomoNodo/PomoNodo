@@ -34,3 +34,14 @@ module.exports = {
 
 
 
+module.exports = {
+  method: 'GET',
+  path: '/issue',
+  config: {
+    auth: {
+      mode: 'try',
+      strategy: 'session'
+    }
+  },
+
+
