@@ -45,3 +45,10 @@ module.exports = {
   },
 
 
+      handler: (req, rep) => {
+      const homeObj = {
+        // title: 'PomoNodo - work mode',
+        loggedIn: req.auth.isAuthenticated
+      };
+
+
