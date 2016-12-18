@@ -1,5 +1,6 @@
 const getIssues = require('../lib/getIssues');
 const marked = require('marked');
+const completeIssue = require('../lib/completeIssue');
 
 module.exports = {
   method: 'GET',
@@ -65,3 +66,4 @@ if (req.auth.isAuthenticated) {
 }
 }
 };
+
