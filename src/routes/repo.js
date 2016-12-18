@@ -67,3 +67,14 @@ if (req.auth.isAuthenticated) {
 }
 };
 
+
+module.exports = {
+  method: 'POST',
+  path: '/complete',
+  config: {
+    auth: {
+      mode: 'try',
+      strategy: 'session'
+    }
+  },
+
