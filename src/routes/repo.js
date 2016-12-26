@@ -1,6 +1,8 @@
 const getIssues = require('../lib/getIssues');
 const marked = require('marked');
 const completeIssue = require('../lib/completeIssue');
+const assignUser = require('../lib/assignUser');
+
 
 module.exports = {
   method: 'GET',
@@ -89,3 +91,5 @@ if (req.auth.isAuthenticated) {
 }
 }
 ;
+
+
