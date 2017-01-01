@@ -93,3 +93,12 @@ if (req.auth.isAuthenticated) {
 ;
 
 
+module.exports = {
+  method: 'POST',
+  path: '/assign',
+  config: {
+    auth: {
+      mode: 'try',
+      strategy: 'session'
+    }
+  },
