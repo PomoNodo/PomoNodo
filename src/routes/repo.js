@@ -2,7 +2,7 @@ const getIssues = require('../lib/getIssues');
 const marked = require('marked');
 const completeIssue = require('../lib/completeIssue');
 const assignUser = require('../lib/assignUser');
-
+const abandonIssue = require('../lib/abandonIssue');
 
 module.exports = {
   method: 'GET',
