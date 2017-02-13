@@ -112,3 +112,14 @@ if (req.auth.isAuthenticated) {
 }
 }
 };
+
+
+module.exports = {
+  method: 'POST',
+  path: '/abandon',
+  config: {
+    auth: {
+      mode: 'try',
+      strategy: 'session'
+    }
+  },
