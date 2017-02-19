@@ -5,5 +5,9 @@ module.exports = (options, cb) => {
     'User-Agent': 'PomoNodo',
     'Authorization': `token ${options.access_token}`
   };
+  const assignUrl = options.issueUrl + '/assignees';
+  const labelUrl = options.issueUrl + '/labels/In%20Progress';
+  const assignPayload = { 'assignees': [ options.userName ] };
 
+  
 };
