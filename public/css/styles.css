@@ -1,0 +1,77 @@
+body {
+  background-color: antique-white;
+  font-family: 'Didact Gothic', sans-serif;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0;
+  min-height: 100vh;
+}
+
+a {
+  color: limeGreen;
+  text-decoration: none;
+  cursor: pointer;
+}
+/*<-- nav bar >*/
+
+.nav {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 88%;
+  margin: auto;
+}
+
+.nav__title {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  height: 4rem;
+}
+
+.nav__controls {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav h1 {
+  color: #000;
+}
+
+/*Welcome zone*/
+
+.welcome {
+  width: 80%;
+  margin: auto;
+}
+
+.welcome__message {
+  text-align: center;
+
+}
+
+.login {
+  margin: 50px;
+  text-align: center;
+}
+
+.cta_button, .cta_button:hover, .cta_button:active, .cta_button:visited {
+  display: block;
+  background-color: limeGreen;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  width: 120px;
+  margin: 0 auto 10px auto;
+  border-width: 0;
+  border-style: none;
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
