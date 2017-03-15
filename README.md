@@ -3,6 +3,10 @@
 A pomodoro app that blocks distractions while you working. App integrates with your Github profile, pull-up issues You working
 and adds to your next TODO pomodoro task
 
+
+
+<img src="https://github.com/alexwander/NodoPomodo/blob/master/img/newscreen.png?raw=true" alt="newscreen.png">
+
 ## Created using:
  - NodeJS
  - MongoDB
