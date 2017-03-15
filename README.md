@@ -4,10 +4,10 @@ A pomodoro app that blocks distractions while you working. App integrates with y
 and adds to your next TODO pomodoro task
 
 ## Created using:
-    - NodeJS
-    - MongoDB
-    - ExpressJS
-    - AngularJS
+ - NodeJS
+ - MongoDB
+ - ExpressJS
+ - AngularJS
 
 ## Instructions
 
